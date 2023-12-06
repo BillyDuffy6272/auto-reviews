@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-135deg, #ff0000, #fbfe17);
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+.menu-btn{
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  /* left: 20px; */
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #ff0404, #fbfe17);
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .menu-btn{
+  background: #fff;
+  color: #4158d0;
+  overflow: hidden;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+  overflow: hidden;
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  color: none;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+.wrapper ul li a:after{
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after{
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+  color: #4158d0;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.content {
+  position: relative; /* Change to relative positioning */
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+
+.image-container img {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.text h1{
+  margin-left: -250px;
+  margin-bottom: -350px;
+ 
+}
+
+.text h2{
+  margin-left: 100px;
+}
+
+.text h3{
+  margin-left: -100px;
+
+}
+
+.title{
+  margin-bottom: -100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+html {
+  padding-bottom: 100px;
+}
+
+.text p {
+  margin-left: -250px;
+  padding-top: 100px;
+  margin-bottom: -50px;
+  margin-top: 270px;
+  font-size: small;
+  font-weight: 100;
+}
+
+.container img {
+  padding-right: 100px;
+  margin-bottom: -50px;
+}
+
+.content .title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo {
+  position: absolute;
+  top: 20px; /* Adjust the top value as needed to position your logo */
+  left: 20px; /* Adjust the left value as needed to position your logo */
+}
+
+.logo img {
+  width: 100px; /* Adjust the width as needed for your logo */
+  height: auto; /* To maintain aspect ratio */
+}
+
+
+.image-container {
+  text-align: center; /* Center the contents horizontally */
+}
+
+
+.image-container p {
+  text-align: center; /* Center the text horizontally */
+}
+
+.search-container {
+  text-align: center;
+}
+
+#search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+

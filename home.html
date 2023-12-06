@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Alex's Auto Reviews</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="search.js">
+      <script src="search-results.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+   <style>
+      .image-container img {
+    display: block; /* Make the image a block element to control its dimensions */
+    margin: 50px auto; /* Add margin to push the image down */
+    max-width: 50%; /* Set the maximum width to 50% of its container */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+  }
+   </style>      
+
+   </head>
+   <body>
+      <div class="logo">
+         <img src="Alex's Auto Reviews-logos.png" alt="Your Logo">
+     </div>
+
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper">
+         <ul>
+            <li><a href="2010.html">2010</a></li>
+            <li><a href="2012.html">2012</a></li>
+            <li><a href="2013.html">2013</a></li>
+            <li><a href="2014.html">2014</a></li>
+            <li><a href="about-us.html">About us</a></li>
+         </ul>
+      </div>
+
+      <div class="image-container">
+         <img src="black_porsche.jpg" alt="Your Image">
+
+   
+         <h1>
+            Welcome to Alex's Auto Reviews Website!
+         </h1>
+         <h3>
+            Reviewing Porsche from 2010 - 2015
+         </h3>
+         <br>
+         <div class="search-container">
+            <form id="search-form" action="search-results.html" method="get">
+                <input type="text" id="search-input" name="query" placeholder="Search Porsche Models...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        
+        <!-- Your website content -->
+        
+        <script src="search.js"></script>
+   </div>
+   </body>
+</html>
